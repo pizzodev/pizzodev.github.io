@@ -1,7 +1,7 @@
 title: pizzodev
 description: Publications and writings
 url: "https://pizzodev.github.io"
-baseurl: "/publications"
+baseurl: ""
 
 # Build settings
 theme: null
