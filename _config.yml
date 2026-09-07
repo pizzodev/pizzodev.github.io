@@ -1,0 +1,12 @@
+title: pizzodev
+description: Publications and writings
+url: "https://pizzodev.github.io"
+baseurl: "/publications"
+
+# Build settings
+theme: null
+plugins: []
+
+exclude:
+  - README.md
+  - .DS_Store
