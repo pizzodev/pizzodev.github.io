@@ -3,6 +3,11 @@ description: Publications and writings
 url: "https://pizzodev.github.io"
 baseurl: ""
 
+collections:
+  publications:
+    output: true
+    permalink: /:collection/:name/
+
 # Build settings
 theme: null
 plugins: []

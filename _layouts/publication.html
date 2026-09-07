@@ -1,0 +1,27 @@
+---
+layout: default
+---
+
+<article class="pub-detail">
+  <header class="pub-detail-header">
+    <div class="pub-detail-meta">
+      <span class="category">{{ page.category }}</span>
+      <span>{{ page.date }}</span>
+    </div>
+    <h1 class="pub-detail-title">{{ page.title }}</h1>
+    {% if page.description %}
+    <p class="pub-detail-desc">{{ page.description }}</p>
+    {% endif %}
+    {% if page.pdf %}
+    <a href="{{ page.pdf | relative_url }}" class="pdf-link" target="_blank">view pdf &rarr;</a>
+    {% endif %}
+  </header>
+
+  <div class="pub-content">
+    {{ content }}
+  </div>
+
+  <footer class="pub-detail-footer">
+    <a href="{{ '/' | relative_url }}">&larr; back</a>
+  </footer>
+</article>

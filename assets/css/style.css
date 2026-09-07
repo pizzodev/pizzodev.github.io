@@ -110,3 +110,83 @@ footer {
   color: var(--muted);
   font-size: 0.78rem;
 }
+
+/* Publication detail */
+.pub-detail {
+  max-width: 100%;
+}
+
+.pub-detail-header {
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 2.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.pub-detail-meta {
+  color: var(--muted);
+  font-size: 0.8rem;
+  margin-bottom: 0.6rem;
+}
+
+.pub-detail-meta .category {
+  color: var(--accent);
+  margin-right: 0.8rem;
+  opacity: 0.7;
+}
+
+.pub-detail-title {
+  font-size: 1.15rem;
+  color: var(--text);
+  text-transform: none;
+  letter-spacing: 0;
+  margin-bottom: 0.6rem;
+}
+
+.pub-detail-desc {
+  color: var(--muted);
+  font-size: 0.85rem;
+  margin-bottom: 1rem;
+}
+
+.pdf-link {
+  display: inline-block;
+  color: var(--accent);
+  font-size: 0.82rem;
+  text-decoration: none;
+  border: 1px solid var(--accent);
+  padding: 0.25rem 0.7rem;
+  opacity: 0.8;
+  transition: opacity 0.15s;
+}
+
+.pdf-link:hover {
+  opacity: 1;
+}
+
+.pub-content {
+  color: var(--text);
+  line-height: 1.8;
+  font-size: 0.92rem;
+}
+
+.pub-content p { margin-bottom: 1.2rem; }
+.pub-content h2 { color: var(--accent); margin: 2rem 0 0.8rem; font-size: 0.95rem; text-transform: uppercase; }
+.pub-content h3 { color: var(--text); margin: 1.5rem 0 0.6rem; font-size: 0.9rem; }
+.pub-content a { color: var(--accent); }
+.pub-content blockquote { border-left: 2px solid var(--accent); margin-left: 0; padding-left: 1rem; color: var(--muted); }
+
+.pub-detail-footer {
+  margin-top: 3rem;
+  border-top: 1px solid var(--border);
+  padding-top: 1rem;
+}
+
+.pub-detail-footer a {
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 0.82rem;
+}
+
+.pub-detail-footer a:hover {
+  color: var(--accent);
+}
