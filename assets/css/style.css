@@ -43,19 +43,211 @@ header {
 
 main {
   flex: 1;
-  max-width: 760px;
+  max-width: 800px;
   width: 100%;
   margin: 0 auto;
   padding: 3rem 2rem;
 }
 
-h1 {
-  font-size: 1rem;
-  color: var(--accent);
-  margin-bottom: 2rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
+footer {
+  border-top: 1px solid var(--border);
+  padding: 1rem 2rem;
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.78rem;
 }
+
+/* ── Hero ── */
+
+.hero {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 2.5rem;
+  margin-bottom: 4rem;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.hero-left {
+  flex: 1;
+}
+
+.hero-right {
+  flex-shrink: 0;
+}
+
+.hero-avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid var(--border);
+  filter: grayscale(20%);
+}
+
+.hero-label {
+  color: var(--muted);
+  font-size: 0.78rem;
+  margin-bottom: 0.6rem;
+  letter-spacing: 0.05em;
+}
+
+.hero-title {
+  font-size: 1.25rem;
+  color: var(--text);
+  text-transform: none;
+  letter-spacing: 0;
+  margin-bottom: 1rem;
+  line-height: 1.4;
+}
+
+.hero-bio {
+  color: var(--muted);
+  font-size: 0.86rem;
+  max-width: 520px;
+  margin-bottom: 1.5rem;
+  line-height: 1.8;
+}
+
+.hero-links {
+  display: flex;
+  gap: 0.8rem;
+}
+
+.hero-links a {
+  color: var(--accent);
+  text-decoration: none;
+  font-size: 0.8rem;
+  opacity: 0.75;
+  border: 1px solid currentColor;
+  padding: 0.2rem 0.65rem;
+  transition: opacity 0.15s;
+}
+
+.hero-links a:hover {
+  opacity: 1;
+}
+
+/* ── Sections ── */
+
+.section {
+  margin-bottom: 4rem;
+}
+
+.section-title {
+  font-size: 0.72rem;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  margin-bottom: 1.6rem;
+  opacity: 0.75;
+}
+
+/* ── Timeline ── */
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+}
+
+.tl-item {
+  padding: 0.9rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.tl-item:first-child {
+  border-top: 1px solid var(--border);
+}
+
+.tl-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.15rem;
+}
+
+.tl-company {
+  color: var(--text);
+  font-size: 0.85rem;
+}
+
+.tl-period {
+  color: var(--muted);
+  font-size: 0.76rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.tl-role {
+  color: var(--muted);
+  font-size: 0.81rem;
+}
+
+/* ── Blinking dot ── */
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.dot-live {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent);
+  animation: blink 1.5s ease-in-out infinite;
+  flex-shrink: 0;
+}
+
+/* ── Projects ── */
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.project-card {
+  border: 1px solid var(--border);
+  background: var(--surface);
+  padding: 1.2rem;
+  text-decoration: none;
+  display: block;
+  transition: border-color 0.15s;
+}
+
+.project-card:hover {
+  border-color: var(--accent);
+}
+
+.project-lang {
+  color: var(--accent);
+  font-size: 0.7rem;
+  opacity: 0.55;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.project-name {
+  color: var(--text);
+  font-size: 0.88rem;
+  margin-bottom: 0.5rem;
+}
+
+.project-desc {
+  color: var(--muted);
+  font-size: 0.78rem;
+  line-height: 1.5;
+}
+
+/* ── Publications ── */
 
 .pub-list {
   list-style: none;
@@ -103,15 +295,8 @@ h1 {
   line-height: 1.5;
 }
 
-footer {
-  border-top: 1px solid var(--border);
-  padding: 1rem 2rem;
-  text-align: center;
-  color: var(--muted);
-  font-size: 0.78rem;
-}
+/* ── Publication detail ── */
 
-/* Publication detail */
 .pub-detail {
   max-width: 100%;
 }
@@ -189,4 +374,28 @@ footer {
 
 .pub-detail-footer a:hover {
   color: var(--accent);
+}
+
+/* ── Responsive ── */
+
+@media (max-width: 600px) {
+  .hero {
+    flex-direction: column-reverse;
+    gap: 1.5rem;
+  }
+
+  .hero-avatar {
+    width: 80px;
+    height: 80px;
+  }
+
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .tl-meta {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.2rem;
+  }
 }
