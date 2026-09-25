@@ -107,6 +107,11 @@ title: Andrea Gazzi
 </section>
 
 <section class="section">
+  <h2 class="section-title">Everyday life</h2>
+  <p class="about-text">Outside of work, I keep myself busy with a mix of hands-on and outdoor pursuits. I cook, do woodworking, and look after a growing collection of plants and terrariums. Football and time spent outdoors keep me grounded. I have a soft spot for indie music, and a long-standing curiosity for space weather and astrophysics — which led me to become an accredited solar observer. Tech is both my profession and a genuine passion.</p>
+</section>
+
+<section class="section">
   <h2 class="section-title">Publications</h2>
   <ul class="pub-list">
   {% assign pubs = site.publications | sort: 'date' | reverse %}

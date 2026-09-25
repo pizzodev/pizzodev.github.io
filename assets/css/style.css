@@ -78,8 +78,8 @@ footer {
 }
 
 .hero-avatar {
-  width: 120px;
-  height: 120px;
+  width: 160px;
+  height: 160px;
   border-radius: 50%;
   object-fit: cover;
   border: 1px solid var(--border);
@@ -142,6 +142,15 @@ footer {
   letter-spacing: 0.14em;
   margin-bottom: 1.6rem;
   opacity: 0.75;
+}
+
+/* ── About ── */
+
+.about-text {
+  color: var(--muted);
+  font-size: 0.86rem;
+  line-height: 1.9;
+  max-width: 620px;
 }
 
 /* ── Timeline ── */
