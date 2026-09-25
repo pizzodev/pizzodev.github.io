@@ -259,6 +259,8 @@ footer {
   padding: 1.2rem 1.4rem;
   margin-bottom: 1rem;
   transition: border-color 0.15s;
+  position: relative;
+  cursor: pointer;
 }
 
 .pub-item:hover {
@@ -273,7 +275,13 @@ footer {
   margin-bottom: 0.3rem;
 }
 
-.pub-item a:hover {
+.pub-item a::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+}
+
+.pub-item:hover a {
   color: var(--accent);
 }
 
