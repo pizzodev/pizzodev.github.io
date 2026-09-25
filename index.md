@@ -7,7 +7,8 @@ title: Andrea Gazzi
   <div class="hero-left">
     <p class="hero-label">// Andrea Gazzi</p>
     <h1 class="hero-title">Team Lead &amp; Senior Software Engineer</h1>
-    <p class="hero-bio">Mobile-first engineer based in Switzerland. Skilled in native app development in Android/iOS, and crossplatform development in Kotlin Multiplatform and Flutter, leading cross-functional delivery teams across banking, insurance, and public sector clients at adesso Schweiz AG.</p>
+<p class="hero-bio">Mobile-first engineer based in Switzerland, specializing in native Android and iOS development, as well as cross-platform solutions with Kotlin Multiplatform and Flutter. Experienced in leading cross-functional delivery teams across banking, insurance, and public-sector projects at adesso Schweiz AG.</p>
+
     <div class="hero-links">
       <a href="https://github.com/pizzodev" target="_blank" rel="noopener">GitHub</a>
       <a href="https://www.linkedin.com/in/andrea-gazzi-592344119/" target="_blank" rel="noopener">LinkedIn</a>
@@ -20,7 +21,7 @@ title: Andrea Gazzi
 
 <section class="section">
   <h2 class="section-title">Everyday life</h2>
-  <p class="about-text">Outside of work, I keep myself busy with a mix of hands-on and outdoor pursuits. I cook, do woodworking, and look after a growing collection of plants and terrariums. Football and time spent outdoors keep me grounded. I have a soft spot for indie music, and a long-standing curiosity for space weather and astrophysics — which led me to become an accredited solar observer. Tech is both my profession and a genuine passion.</p>
+<p class="about-text">In daily life, I like to stay busy with a mix of hands-on and outdoor pursuits. I cook, do woodworking, and look after a growing collection of cacti, plants, and terrariums. Football and time outdoors keep me grounded. I have a soft spot for indie music and a long-standing curiosity about space weather and astrophysics, which eventually led me to become an accredited sunspot observer. Tech is both my profession and a genuine passion—but I try not to get too nerdy about it.</p>
 </section>
 
 <section class="section">
