@@ -6,14 +6,14 @@ layout: default
   <header class="pub-detail-header">
     <div class="pub-detail-meta">
       <span class="category">{{ page.category }}</span>
-      <span>{{ page.date }}</span>
+      <span>{{ page.date | date: "%B %-d, %Y" }}</span>
     </div>
     <h1 class="pub-detail-title">{{ page.title }}</h1>
     {% if page.description %}
     <p class="pub-detail-desc">{{ page.description }}</p>
     {% endif %}
     {% if page.pdf %}
-    <a href="{{ page.pdf | relative_url }}" class="pdf-link" target="_blank">view pdf &rarr;</a>
+    <a href="{{ page.pdf | relative_url }}" class="pdf-link" target="_blank">Read full publication &rarr;</a>
     {% endif %}
   </header>
 
